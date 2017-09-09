@@ -7,7 +7,10 @@
         <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
 
 
-        {% block title %}页面标题{% endblock %}
+        <title>
+            {% block title %}页面标题{% endblock %}
+        </title>
+
 
 
         {% load staticfiles %}
@@ -16,16 +19,35 @@
         <link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap-theme.css' %}" />
     </head>
     <body>
-        <header class="">
+        <header style="background: #6666ff">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
 
+                    </div>
+                </div>
+            </div>
         </header>
 
 
-        <nav class="">
-
+        <nav class="navbar" role="navigation">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">首页</a></li>
+                            <li><a href="#">公司概况</a></li>
+                            <li><a href="#">公司新闻</a></li>
+                            <li><a href="#">产品服务</a></li>
+                            <li><a href="#">人才招聘</a></li>
+                            <li><a href="#">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
 
-
+        
         <main>
 
         </main>
