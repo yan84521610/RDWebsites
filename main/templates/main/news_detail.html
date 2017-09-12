@@ -2,7 +2,7 @@
 
 
 {% block title %}
-    联系我们
+    {{ news.title }}
 {% endblock title %}
 
 
@@ -12,12 +12,14 @@
             <div class="col-md-12">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        <h3 class="panel-title text-center">联系我们</h3>
+                        <h3 class="panel-title text-center">{{ news.title }}</h3>
                     </div>
                     <div class="panel-body">
-                        <h4>公司地址</h4>
-                        <h4>联系电话</h4>
-                        <h4>电子邮箱</h4>
+                      <h4>{{ post.title }}</h4>
+                          <p class="date">
+                            {{ news.author }} 发布于 {{ news.publish }}
+                          </p>
+                      {{ news.body|linebreaks }}
                     </div>
                 </div>
             </div>
