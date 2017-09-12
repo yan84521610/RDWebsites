@@ -26,6 +26,7 @@
                             </p>
                             {{ news.body|truncatewords:30|linebreaks }}
                         {% endfor %}
+                        {% include "main/pagination.html" with page=news_list %}
                     </div>
                 </div>
             </div>

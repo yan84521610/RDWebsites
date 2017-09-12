@@ -1,10 +1,21 @@
 from django.shortcuts import get_object_or_404, render
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 from .models import News
 
 
 def news(request):
-    news_list = News.published.all()
+    object_list = News.published.all()
+    paginator = Paginator(object_list, 5)  # 5 posts in each page
+    page = request.GET.get('page')
+    try:
+        news_list = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer deliver the first page
+        news_list = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range deliver last page of results
+        news_list = paginator.page(paginator.num_pages)
     return render(
         request,
         'main/news.html',
