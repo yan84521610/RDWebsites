@@ -46,5 +46,8 @@ def products(request):
 def hr(request):
     return render(request, 'main/hr.html', )
 
+def cooperation(request):
+    return render(request, 'main/cooperation.html', )
+
 def contacts(request):
     return render(request, 'main/contacts.html', )

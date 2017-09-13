@@ -12,5 +12,6 @@ urlpatterns = [
         name='news_detail'),
     url(r'products', views.products, name='products'),
     url(r'hr', views.hr, name='hr'),
+    url(r'cooperation', views.cooperation, name='cooperation'),
     url(r'contacts', views.contacts, name='contacts'),
 ]
