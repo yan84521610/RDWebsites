@@ -2,7 +2,7 @@
 
 
 {% block title %}
-    公司概况
+    {{ product.title }}
 {% endblock title %}
 
 
@@ -12,11 +12,15 @@
             <div class="col-md-12">
                 <div class="panel panel-info">
                     <div class="panel-heading">
-                        <p class="panel-title text-center">公司概况</p>
+                        <p class="panel-title text-center">{{ product.title }}</p>
                     </div>
                     <div class="panel-body">
-                        {% load static %}
-                        <img src="{% static "main/image/about.jpg" %}" class="img-responsive center-block">
+                        <img src="{{ product.image.url }}" class="img-responsive">
+                        <h4>{{ post.title }}</h4>
+                          <p class="date">
+                            {{ product.author }} 发布于 {{ product.publish }}
+                          </p>
+                        {{ product.body|linebreaks }}
                     </div>
                 </div>
             </div>

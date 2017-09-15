@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import News
+from .models import News, Product
 
 
 # class NewsAdmin(admin.ModelAdmin):
@@ -13,3 +13,5 @@ from .models import News
 #     date_hierarchy = 'publish'
 #     ordering = ['status', 'publish']
 admin.site.register(News)
+
+admin.site.register(Product)

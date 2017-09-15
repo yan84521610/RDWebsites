@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-from .models import News
+from .models import News, Product
 
 
 def news(request):
@@ -42,6 +42,36 @@ def about(request):
 
 def products(request):
     return render(request, 'main/products.html', )
+
+def product(request):
+    object_list = Product.published.all()
+    paginator = Paginator(object_list, 5)  # 5 posts in each page
+    page = request.GET.get('page')
+    try:
+        product_list = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer deliver the first page
+        product_list = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range deliver last page of results
+        product_list = paginator.page(paginator.num_pages)
+    return render(
+        request,
+        'main/product.html',
+        {'product_list': product_list}
+    )
+
+def product_detail(request, year, month, day, product):
+    product = get_object_or_404(Product, slug=product,
+                             status='published',
+                             publish__year=year,
+                             publish__month=month,
+                             publish__day=day)
+    return render(
+        request,
+        'main/product_detail.html',
+        {'product': product},
+    )
 
 def hr(request):
     return render(request, 'main/hr.html', )

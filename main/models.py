@@ -18,7 +18,7 @@ class News(models.Model):
     slug = models.SlugField(max_length=250,
                             unique_for_date='publish')
     author = models.ForeignKey(User,
-                               related_name='blog_posts')
+                               related_name='news_posts')
     body = models.TextField()
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
@@ -31,12 +31,48 @@ class News(models.Model):
 
     class Meta:
         ordering = ('-publish',)
+        verbose_name_plural = '新闻'
 
     def __str__(self):
         return self.title
 
     def get_absolute_url(self):
         return reverse('main:news_detail',
+                       args=[self.publish.year,
+                             self.publish.strftime('%m'),
+                             self.publish.strftime('%d'),
+                             self.slug])
+
+class Product(models.Model):
+    STATUS_CHOICES = (
+        ('draft', 'Draft'),
+        ('published', 'Published'),
+    )
+    title = models.CharField(max_length=250)
+    slug = models.SlugField(max_length=250,
+                            unique_for_date='publish')
+    author = models.ForeignKey(User,
+                               related_name='product_posts')
+    body = models.TextField()
+    image = models.ImageField()
+    publish = models.DateTimeField(default=timezone.now)
+    created = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now=True)
+    status = models.CharField(max_length=10,
+                              choices=STATUS_CHOICES,
+                              default='draft')
+    objects = models.Manager() # The default manager.
+    published = PublishedManager() # Our custom manager.
+
+    class Meta:
+        ordering = ('-publish',)
+        verbose_name_plural = '产品服务'
+
+    def __str__(self):
+        return self.title
+
+    def get_absolute_url(self):
+        return reverse('main:product_detail',
                        args=[self.publish.year,
                              self.publish.strftime('%m'),
                              self.publish.strftime('%d'),
