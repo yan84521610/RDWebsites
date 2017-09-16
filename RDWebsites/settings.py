@@ -25,7 +25,7 @@ SECRET_KEY = '!&=3zv(1ecf#k&l5yd_omy2$w8i+34zk84pz4ou)77+1i*2491'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '192.168.1.71',]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '192.168.1.71',]
 INSTALLED_APPS = [
     'main.apps.mainConfig',
     'ckeditor',
+    'ckeditor_uploader',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -119,9 +120,16 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
+
 STATIC_URL = '/static/'
 
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 CKEDITOR_UPLOAD_PATH = "images"
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}

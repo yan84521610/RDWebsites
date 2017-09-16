@@ -5,7 +5,7 @@ from .models import News
 
 
 def news(request):
-    object_list = News.published.all()
+    object_list = News.published.filter(category='news')
     paginator = Paginator(object_list, 5)  # 5 posts in each page
     page = request.GET.get('page')
     try:
@@ -44,7 +44,7 @@ def products(request):
     return render(request, 'main/products.html', )
 
 def product(request):
-    object_list = Product.published.all()
+    object_list = News.published.filter(category='product')
     paginator = Paginator(object_list, 5)  # 5 posts in each page
     page = request.GET.get('page')
     try:
@@ -61,17 +61,6 @@ def product(request):
         {'product_list': product_list}
     )
 
-def product_detail(request, year, month, day, product):
-    product = get_object_or_404(Product, slug=product,
-                             status='published',
-                             publish__year=year,
-                             publish__month=month,
-                             publish__day=day)
-    return render(
-        request,
-        'main/product_detail.html',
-        {'product': product},
-    )
 
 def hr(request):
     return render(request, 'main/hr.html', )

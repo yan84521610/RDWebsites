@@ -1,5 +1,7 @@
 from django.db import models
 from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
+
 from django.utils import timezone
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
@@ -15,13 +17,22 @@ class News(models.Model):
         ('draft', 'Draft'),
         ('published', 'Published'),
     )
+    CATEGORY_CHOICES = (
+        ('news', 'News'),
+        ('product', 'Product'),
+        ('employment', 'Employment'),
+    )
+    category = models.CharField(max_length=10,
+                                choices=CATEGORY_CHOICES,
+                                default='news')
     title = models.CharField(max_length=250)
     slug = models.SlugField(max_length=250,
                             unique_for_date='publish')
     author = models.ForeignKey(User,
                                related_name='news_posts')
-    body = models.TextField()
-    body2 = RichTextField(default='请编辑内容')
+    intro = models.TextField(default='请编剧简介')
+    body = RichTextField(default='请编辑内容')
+    body2 = RichTextUploadingField(default='请编辑内容')
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -33,7 +44,7 @@ class News(models.Model):
 
     class Meta:
         ordering = ('-publish',)
-        verbose_name_plural = '新闻'
+        verbose_name_plural = '内容'
 
     def __str__(self):
         return self.title

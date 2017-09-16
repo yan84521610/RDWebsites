@@ -15,11 +15,12 @@
                         <p class="panel-title text-center">{{ news.title }}</p>
                     </div>
                     <div class="panel-body">
-                      <h4>{{ post.title }}</h4>
-                          <p class="date">
-                            {{ news.author }} 发布于 {{ news.publish }}
-                          </p>
-                      {{ news.body|linebreaks }}
+                        <h4>{{ post.title }}</h4>
+                            <p class="date">
+                                {{ news.author }} 发布于 {{ news.publish }}
+                            </p>
+                        {{ news.body|linebreaks }}
+                        {{ news.body2|safe }}
                     </div>
                 </div>
             </div>
