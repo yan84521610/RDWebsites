@@ -1,5 +1,4 @@
 from django.db import models
-from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 
 from django.utils import timezone
@@ -31,8 +30,7 @@ class News(models.Model):
     author = models.ForeignKey(User,
                                related_name='news_posts')
     intro = models.TextField(default='请编剧简介')
-    body = RichTextField(default='请编辑内容')
-    body2 = RichTextUploadingField(default='请编辑内容')
+    body = RichTextUploadingField(default='请编辑内容')
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
