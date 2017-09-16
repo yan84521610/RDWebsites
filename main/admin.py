@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import News, Product
+from .models import News
 
 
 # class NewsAdmin(admin.ModelAdmin):
@@ -14,4 +14,4 @@ from .models import News, Product
 #     ordering = ['status', 'publish']
 admin.site.register(News)
 
-admin.site.register(Product)
+# admin.site.register(Product)
