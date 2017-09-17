@@ -42,7 +42,7 @@ class News(models.Model):
 
     class Meta:
         ordering = ('-publish',)
-        verbose_name_plural = '内容'
+        verbose_name_plural = 'Content'
 
     def __str__(self):
         return self.title
