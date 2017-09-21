@@ -61,9 +61,9 @@ def product(request):
         {'product_list': product_list}
     )
 
-
 def hr(request):
-    return render(request, 'main/hr.html', )
+    object_list = News.published.filter(category='employment')
+    return render(request, 'main/hr.html', {'employment_list': object_list})
 
 def cooperation(request):
     return render(request, 'main/cooperation.html', )
