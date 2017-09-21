@@ -30,7 +30,7 @@ def news_detail(request, year, month, day, news):
                              publish__day=day)
     return render(
         request,
-        'main/news_detail.html',
+        "main/news_detail.html",
         {'news': news},
     )
 

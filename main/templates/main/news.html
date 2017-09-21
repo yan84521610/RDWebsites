@@ -24,7 +24,7 @@
                             <p>
                                 {{ news.author }} 发布于 {{ news.publish }}
                             </p>
-                            {{ news.intro|truncatewords:30|linebreaks }}
+                            {{ news.intro|linebreaks }}
                         {% endfor %}
                         {% include "main/pagination.html" with page=news_list %}
                     </div>

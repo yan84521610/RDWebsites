@@ -36,13 +36,13 @@
                                 <div class="navbar-brand">锐达医药</div>
                             </div>
                             <ul class="nav navbar-nav navbar-right">
-                                <li><a href="index.html">主页</a></li>
-                                <li><a href="about.html">公司概况</a></li>
-                                <li><a href="news.html">公司新闻</a></li>
-                                <li><a href="products.html">产品服务</a></li>
-                                <li><a href="hr.html">人才招聘</a></li>
-                                <li><a href="cooperation.html">对外合作</a></li>
-                                <li><a href="contacts.html">联系我们</a></li>
+                                <li><a href={% url 'main:index' %}>主页</a></li>
+                                <li><a href={% url 'main:about' %}>公司概况</a></li>
+                                <li><a href={% url 'main:news' %}>公司新闻</a></li>
+                                <li><a href={% url 'main:products' %}>产品服务</a></li>
+                                <li><a href={% url 'main:hr' %}>人才招聘</a></li>
+{#                                <li><a href="/main/templates/main/cooperation.html">对外合作</a></li>#}
+                                <li><a href={% url 'main:contacts' %}>联系我们</a></li>
                             </ul>
                         </div>
                     </div>
