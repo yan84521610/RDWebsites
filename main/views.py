@@ -43,24 +43,6 @@ def about(request):
 def products(request):
     return render(request, 'main/products.html', )
 
-def product(request):
-    object_list = News.published.filter(category='product')
-    paginator = Paginator(object_list, 5)  # 5 posts in each page
-    page = request.GET.get('page')
-    try:
-        product_list = paginator.page(page)
-    except PageNotAnInteger:
-        # If page is not an integer deliver the first page
-        product_list = paginator.page(1)
-    except EmptyPage:
-        # If page is out of range deliver last page of results
-        product_list = paginator.page(paginator.num_pages)
-    return render(
-        request,
-        'main/product.html',
-        {'product_list': product_list}
-    )
-
 def hr(request):
     object_list = News.published.filter(category='employment')
     return render(request, 'main/hr.html', {'employment_list': object_list})

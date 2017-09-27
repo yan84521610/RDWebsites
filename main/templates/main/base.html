@@ -14,9 +14,11 @@
 
         {% load staticfiles %}
         <!-- Bootstrap -->
-        <link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap.css' %}" />
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/bootstrap.min.css' %}" />
+
+
     </head>
-    <body style="background-color: #FAFDFF">
+    <body>
         <header>
             <div class="container">
                 <div class="row">
@@ -50,11 +52,15 @@
             </div>
         </nav>
 
-        
+        <hr>
+
+
         <main>
             {% block main %}{% endblock main %}
         </main>
 
+
+        <hr>
 
         <footer>
             <div class="container">
