@@ -10,7 +10,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="panel panel-primary">
+                {% load static %}
+                <h1 class="text-center" style="background-image: url({% static "main/image/blue-swirl-abstract-website-header.jpg"%}); padding-top: 2%; padding-bottom: 2%">公司新闻 / News</h1>
+
+                <div class="panel panel-default">
                     <div class="panel-body">
                         {% for news in news_list %}
                             <h4>

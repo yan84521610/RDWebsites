@@ -40,8 +40,20 @@ def index(request):
 def about(request):
     return render(request, 'main/about.html', )
 
+def gongsijianjie(request):
+    return render(request, 'main/gongsijianjie.html', )
+
+def guanlituandui(request):
+    return render(request, 'main/guanlituandui.html', )
+
+def gongsirongyu(request):
+    return render(request, 'main/gongsirongyu.html', )
+
 def products(request):
     return render(request, 'main/products.html', )
+
+def primer(request):
+    return render(request, 'main/primer.html', )
 
 def hr(request):
     object_list = News.published.filter(category='employment')

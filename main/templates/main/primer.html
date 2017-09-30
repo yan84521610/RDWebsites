@@ -1,0 +1,69 @@
+{% extends "main/base.html" %}
+
+
+{% block title %}
+    产品服务
+{% endblock title %}
+
+
+{% block main %}
+    <div class="container">
+        <div class="row">
+            {% load static %}
+            <h1 class="text-center" style="background-image: url({% static "main/image/rainbow-waves-abstract-website-header.jpg"%}); padding-top: 2%; padding-bottom: 2%">引物合成</h1>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="text-center">产品种类</h2>
+                    <h3>普通引物</h3>
+                    <ul>
+                        <li>
+                            <p>OPC/RPC纯化，适用碱基长度15-60 base，纯度大于90%<br/></p>
+                        </li>
+                        <li>
+                            <p>PAGE纯化，适用碱基长度15-110 base，纯度大于95%<br/></p>
+                        </li>
+                        <li>
+                            <p>HPLC纯化，适用碱基长度15-110 base，纯度可达99%<br/></p>
+                        </li>
+                    </ul>
+                    <h3>修饰引物</h3>
+                    <ul>
+                        <li>
+                            <p>进口原料，提供Fam、Biotin 、HEX、TAMRA、ROX、Phosphorylation 等多种标记探针<br/></p>
+                        </li>
+                    </ul>
+                    <h3>全基因合成</h3>
+                    <ul>
+                        <li>
+                            <p>最长可以合成5000bp<br/></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="text-center">订购流程指南</h2>
+                    <ol class="lead">
+                        {% load static %}
+                        <li>下载河南省锐达引物订单表<a href="{% static "main/download_file/order_list.xls" %}" download="order_list">点击下载</a>；</li>
+                        <li>客户在引物订单表内填写订购信息；</li>
+                        <li>发送引物订单表到电子邮箱：<a href="mailto:sales@rdmarvin.com">sales@rdmarvin.com</a>；</li>
+                        <li>客服人员联系客户确认订购信息；</li>
+                        <li>引物配送；</li>
+                        <li>客服人员联系客户确认收货情况。</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="panel-footer">
+                <p>
+                    销售热线：<a href="tel:17337867651">17337867651</a>
+                </p>
+                <p>
+                    电子邮箱：<a href="mailto:sales@rdmarvin.com">sales@rdmarvin.com</a>
+                </p>
+            </div>
+        </div>
+{% endblock main %}

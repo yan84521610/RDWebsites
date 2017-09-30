@@ -8,176 +8,42 @@
 
 {% block main %}
     <div class="container">
-            <div class="row">
-                <div class="col-md-12" >
-                    <h1 class="text-center">产品服务 / Product and Service</h1>
-                </div>
-            </div>
+        <div class="row">
+            {% load static %}
+            <h1 class="text-center" style="background-image: url({% static "main/image/rainbow-waves-abstract-website-header.jpg"%}); padding-top: 2%; padding-bottom: 2%">产品服务 / Products and Services</h1>
 
-            <div class="row">
-                <div class="panel panel-primary">
-                    <div class="panel-body">
-                <div class="col-md-6" style="color: white; background-color: #6666FF; width: 50%; padding-bottom: 25%;">
-                    <h1 class="text-center">靶向药</h1>
-                </div>
-                <div class="col-md-6" style="color: white; background-color: #B2B2FF; width: 50%; padding-bottom: 25%;">
-                    <h1 class="text-center">生物药</h1>
-                </div>
-                <div class="col-md-6" style="color: white; background-color: #33337F; width: 50%; padding-bottom: 25%;">
-                    <h1 class="text-center">诊断类</h1>
-                </div>
-                <div class="col-md-6" style="color: white; background-color: #59597F; width: 50%; padding-bottom: 25%;">
-                    <h1 class="text-center">服务类</h1>
-                </div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="col-md-6" style="color: white; background-color: #99CCFF; width: 50%;">
+                        <h1 class="text-center">靶向药</h1>
+                        <h3 class="text-center">STAT3抑制剂</h3>
+                        <h3 class="text-center">白介素6</h3>
+                    </div>
+                    <div class="col-md-6" style="color: white; background-color: #7AA3CC; width: 50%;">
+                        <h1 class="text-center">生物药</h1>
+                        <h3 class="text-center">姜黄素制剂</h3>
+                        <h3><br></h3>
+                    </div>
+                    <div class="col-md-6" style="color: white; background-color: #5986B2; width: 50%;">
+                        <h1 class="text-center">诊断类</h1>
+                        <a href={% url "main:primer" %}><h3 class="text-center">引物合成</h3></a>
+                        <h3><br></h3>
+                    </div>
+                    <div class="col-md-6" style="color: white; background-color: #B2D9FF; width: 50%;">
+                        <h1 class="text-center">服务类</h1>
+                        <h3><br></h3>
+                        <h3><br></h3>
                     </div>
                 </div>
-
             </div>
-{#        <div class="panel panel-default">#}
-{##}
-{#        </div>#}
 
-
-
-
-
-{#        <div class="row">#}
-{#            <div class="col-md-12">#}
-{#                <div class="panel panel-info">#}
-{##}
-{##}
-{##}
-{##}
-{#                    <div class="panel-heading">#}
-{#                        <p class="panel-title text-center">产品服务</p>#}
-{#                    </div>#}
-{#                    <div class="panel-body">#}
-{#                        <div class="col-md-2">#}
-{#                            <div class="btn-group-vertical" style="position: fixed">#}
-{#                                <a href="#chanpin" class="btn btn-primary btn-lg">产品</a>#}
-{#                                <a href="#fuwu" class="btn btn-primary btn-lg">服务</a>#}
-{#                                <a href="#youshi" class="btn btn-primary btn-lg">优势</a>#}
-{#                            </div>#}
-{#                        </div>#}
-{#                        <div class="col-md-10">#}
-{#                            <div>#}
-{#                                <h1 id="chanpin" class="text-center">产品</h1>#}
-{#                                <div class="panel panel-default">#}
-{#                                    <div class="panel-body">#}
-{#                                        <h4 class="text-center">#}
-{#                                            普通引物#}
-{#                                        </h4>#}
-{#                                        <p>#}
-{#                                            OPC/RPC 纯化，适用碱基长度 15-60 base，纯度大于 90%#}
-{#                                        </p>#}
-{#                                        <p>#}
-{#                                            PAGE 纯化，适用碱基长度 15-110 base，纯度大于 95%#}
-{#                                        </p>#}
-{#                                        <p>#}
-{#                                            HPLC 纯化，适用碱基长度 15-110 base，纯度可达 99%#}
-{#                                        </p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="panel panel-default">#}
-{#                                    <div class="panel-body">#}
-{#                                        <h4 class="text-center">#}
-{#                                            修饰引物#}
-{#                                        </h4>#}
-{#                                        <p>#}
-{#                                            进口原料，提供 Fam、Biotin 、HEX、TAMRA、ROX、Phosphorylation 等多种标记探针#}
-{#                                        </p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="panel panel-default">#}
-{#                                    <div class="panel-body">#}
-{#                                        <h4 class="text-center">#}
-{#                                            全基因合成#}
-{#                                        </h4>#}
-{#                                        <p>#}
-{#                                            最长可以合成 5000bp#}
-{#                                        </p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{#                                <div class="panel panel-default">#}
-{#                                    <div class="panel-body">#}
-{#                                        <h4 class="text-center">#}
-{#                                            分子生物学试剂#}
-{#                                        </h4>#}
-{#                                        <p>#}
-{#                                            高保真酶#}
-{#                                        </p>#}
-{#                                        <p>#}
-{#                                            CRISPR 基因编辑载体#}
-{#                                        </p>#}
-{#                                        <p>#}
-{#                                            TapDNA 聚合酶#}
-{#                                        </p>#}
-{#                                        <p>#}
-{#                                            T4 连接酶#}
-{#                                        </p>#}
-{#                                        <p>#}
-{#                                            多种细胞系#}
-{#                                        </p>#}
-{#                                    </div>#}
-{#                                </div>#}
-{##}
-{#                                <h1 id="fuwu" class="text-center">#}
-{#                                    服务#}
-{#                                </h1>#}
-{#                                <div class="panel panel-default">#}
-{#                                        <div class="panel-body">#}
-{#                                            <p>#}
-{#                                                DNA/RNA 提取#}
-{#                                            </p>#}
-{#                                            <p>#}
-{#                                                分子克隆#}
-{#                                            </p>#}
-{#                                            <p>#}
-{#                                                载体构建#}
-{#                                            </p>#}
-{#                                            <p>#}
-{#                                                工程菌/细胞构建#}
-{#                                            </p>#}
-{#                                            <p>#}
-{#                                                蛋白表达/纯化#}
-{#                                            </p>#}
-{#                                            <p>#}
-{#                                                酶切形成 T vector（T-A克隆）#}
-{#                                            </p>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{##}
-{#                                <h1 id="youshi" class="text-center">#}
-{#                                    优势#}
-{#                                </h1>#}
-{#                                <div class="panel panel-default">#}
-{#                                        <div class="panel-body">#}
-{#                                            <p>#}
-{#                                                可靠的质量保证#}
-{#                                            </p>#}
-{#                                            <p>#}
-{#                                                最高效的合成发货效率#}
-{#                                            </p>#}
-{#                                            <p>#}
-{#                                                强大的分子实验研究技术团队#}
-{#                                            </p>#}
-{#                                        </div>#}
-{#                                    </div>#}
-{##}
-{#                            </div>#}
-{#                        </div>#}
-{##}
-{#                    </div>#}
-{#                    <div class="panel-footer">#}
-{#                        <p>#}
-{#                            销售热线：<a href="tel:17337867651">17337867651</a>#}
-{#                        </p>#}
-{#                        <p>#}
-{#                            电子邮箱：<a href="mailto:sales@rdmarvin.com">sales@rdmarvin.com</a>#}
-{#                        </p>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-    </div>
+            <div class="panel-footer">
+                <p>
+                    销售热线：<a href="tel:17337867651">17337867651</a>
+                </p>
+                <p>
+                    电子邮箱：<a href="mailto:sales@rdmarvin.com">sales@rdmarvin.com</a>
+                </p>
+            </div>
+        </div>
 {% endblock main %}
