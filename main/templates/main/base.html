@@ -20,7 +20,8 @@
     </head>
 
     <!-- 模板页面主体内容 -->
-    <body style="background-color: white">
+    <body>
+        <!-- 页头 -->
         <header>
             <div class="container">
                 <div class="row">
@@ -39,14 +40,14 @@
 {#                            <div class="navbar-header">#}
 {#                                <div class="navbar-brand"><h3>锐达医药</h3></div>#}
 {#                            </div>#}
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a href={% url 'main:index' %}><h4>主页</h4></a></li>
-                                <li><a href={% url 'main:about' %}><h4>关于锐达</h4></a></li>
-                                <li><a href={% url 'main:news' %}><h4>公司新闻</h4></a></li>
-                                <li><a href={% url 'main:products' %}><h4>产品服务</h4></a></li>
-                                <li><a href={% url 'main:hr' %}><h4>加入我们</h4></a></li>
+                            <ul class="nav navbar-nav navbar-right" style="font-size: 150%">
+                                <li><a href={% url 'main:index' %}>主页</a></li>
+                                <li><a href={% url 'main:about' %}>关于锐达</a></li>
+                                <li><a href={% url 'main:news' %}>公司新闻</a></li>
+                                <li><a href={% url 'main:products' %}>产品服务</a></li>
+                                <li><a href={% url 'main:employment' %}>加入我们</a></li>
 {#                                <li><a href="/main/templates/main/cooperation.html">对外合作</a></li>#}
-                                <li><a href={% url 'main:contacts' %}><h4>联系我们</h4></a></li>
+                                <li><a href={% url 'main:contacts' %}>联系我们</a></li>
                             </ul>
                         </div>
                     </div>
@@ -58,7 +59,7 @@
 
         <main>
             {% load static %}
-            <div style="background: url({% static "main/image/backgroud_image_03.jpg"%})">
+            <div style="background: url({% static "main/image/backgroud_image.jpg" %})">
                 {% block main %}{% endblock main %}
             </div>
         </main>

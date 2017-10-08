@@ -1,7 +1,7 @@
 from django.shortcuts import get_object_or_404, render
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
-from .models import News
+from .models import News, Employment
 
 
 def news(request):
@@ -58,6 +58,37 @@ def primer(request):
 def hr(request):
     object_list = News.published.filter(category='employment')
     return render(request, 'main/hr.html', {'employment_list': object_list})
+
+def employment(request):
+    object_list = Employment.published.filter(category='employment')
+    paginator = Paginator(object_list, 10)  # 10 posts in each page
+    page = request.GET.get('page')
+    try:
+        employment_list = paginator.page(page)
+    except PageNotAnInteger:
+        # If page is not an integer deliver the first page
+        employment_list = paginator.page(1)
+    except EmptyPage:
+        # If page is out of range deliver last page of results
+        employment_list = paginator.page(paginator.num_pages)
+    return render(
+        request,
+        'main/employment.html',
+        {'employment_list': employment_list}
+    )
+
+def employment_detail(request, year, month, day, employment, category):
+    employment = get_object_or_404(Employment, slug=employment,
+                             status='published',
+                             publish__year=year,
+                             publish__month=month,
+                             publish__day=day,
+                             category=category)
+    return render(
+        request,
+        "main/employment_detail.html",
+        {'employment': employment},
+    )
 
 def cooperation(request):
     return render(request, 'main/cooperation.html', )

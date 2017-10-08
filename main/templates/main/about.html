@@ -10,25 +10,24 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                {% load static %}
-                <h1 class="text-center" style="background-image: url({% static "main/image/red-abstract-cubes-digital-art-web-header.jpg"%}); padding-top: 2%; padding-bottom: 2%">关于锐达 / Overview</h1>
+                <h1 class="text-center" style="padding-top: 2%; padding-bottom: 2%">关于锐达 / Overview</h1>
 
                 {% load static %}
                 <img src="{% static "main/image/about_image_01.jpg" %}" class="img-responsive">
 
-                <div href="" class="col-md-4" style="background-color: #7AA3CC;">
+                <div href="" class="col-md-4" style="background-color: lawngreen;">
                     <h1 class="text-center">公司简介</h1>
                     <a class="btn btn-default center-block" href={% url "main:gongsijianjie" %} role="button">点击进入</a>
                     <h3><br></h3>
-
                 </div>
-                <div class="col-md-4" style="background-color: #5986B2;">
+
+                <div class="col-md-4" style="background-color: orange;">
                     <h1 class="text-center">管理团队</h1>
                     <a class="btn btn-default center-block" href={% url "main:guanlituandui" %} role="button">点击进入</a>
                     <h3><br></h3>
-
                 </div>
-                <div class="col-md-4" style="background-color: #B2D9FF;">
+
+                <div class="col-md-4" style="background-color: rebeccapurple;">
                     <h1 class="text-center">公司荣誉</h1>
                     <a class="btn btn-default center-block" href={% url "main:gongsirongyu" %} role="button">点击进入</a>
                     <h3><br></h3>

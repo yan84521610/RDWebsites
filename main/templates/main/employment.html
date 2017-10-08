@@ -1,0 +1,44 @@
+{% extends "main/base.html" %}
+
+
+{% block title %}
+    加入我们
+{% endblock title %}
+
+
+{% block main %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                {% load static %}
+                <h1 class="text-center" style="padding-top: 2%; padding-bottom: 2%">加入我们 / Join Us</h1>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <table class="table table-striped text-center" style="font-size: 100%">
+                            <thead>
+                                <tr>
+                                    <th class="text-center">岗位</th>
+                                    <th class="text-center">专业</th>
+                                    <th class="text-center">学历</th>
+                                    <th class="text-center">工作地点</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for employment in employment_list %}
+                                    <tr>
+                                        <td><a href="{{ employment.get_absolute_url }}">{{ employment.title }}</a></td>
+                                        <td>{{ employment.profession }}</td>
+                                        <td>{{ employment.education }}</td>
+                                        <td>{{ employment.location }}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        {% include "main/pagination.html" with page=employment_list %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock main %}
