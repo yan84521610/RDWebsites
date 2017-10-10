@@ -14,37 +14,28 @@
 
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h2 class="text-center">产品种类</h2>
-                    <h3>普通引物</h3>
-                    <ul>
-                        <li>
-                            <p>OPC/RPC纯化，适用碱基长度15-60 base，纯度大于90%<br/></p>
-                        </li>
-                        <li>
-                            <p>PAGE纯化，适用碱基长度15-110 base，纯度大于95%<br/></p>
-                        </li>
-                        <li>
-                            <p>HPLC纯化，适用碱基长度15-110 base，纯度可达99%<br/></p>
-                        </li>
-                    </ul>
-                    <h3>修饰引物</h3>
-                    <ul>
-                        <li>
-                            <p>进口原料，提供Fam、Biotin 、HEX、TAMRA、ROX、Phosphorylation 等多种标记探针<br/></p>
-                        </li>
-                    </ul>
-                    <h3>全基因合成</h3>
-                    <ul>
-                        <li>
-                            <p>最长可以合成5000bp<br/></p>
-                        </li>
-                    </ul>
+                    <h1 class="text-center">引物种类</h1>
+                    <div class="col-md-6">
+                        {% load static %}
+                        <img src="{% static "main/image/oligo-common-primer_110x210.png" %}" class="img-responsive center-block">
+                        <h2 class="text-center">普通引物</h2>
+                        <h5 class="text-center">常规引物合成：6-60 base</h5>
+                        <h5 class="text-center">长链引物合成：61-150 base</h5>
+                        <h5 class="text-center">（提供DSL，hPAGE，HPLC纯化方式）</h5>
+                    </div>
+                    <div class="col-md-6">
+                        {% load static %}
+                        <img src="{% static "main/image/oligo - Custom.png" %}" class="img-responsive center-block">
+                        <h2 class="text-center">修饰引物</h2>
+                        <h5 class="text-center">提供多种修饰类型</h5>
+                        <h5 class="text-center">提供质谱报告</h5>
+                    </div>
                 </div>
             </div>
 
             <div class="panel panel-default">
                 <div class="panel-body">
-                    <h2 class="text-center">订购流程指南</h2>
+                    <h1 class="text-center">订购流程指南</h1>
                     <ol class="lead">
                         {% load static %}
                         <li>下载河南省锐达引物订单表<a href="{% static "main/download_file/order_list.xls" %}" download="order_list">点击下载</a>；</li>
