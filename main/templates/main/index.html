@@ -7,18 +7,20 @@
 
 
 {% block main %}
-    {% load static %}
-
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+
+                <br>
+
                 <div class="panel panel-default">
                     <div class="panel-body">
                         <div class="row">
-                            <div class="col-md-12 center-block">
-                                <h1 class="text-center">河南省锐达医药科技有限公司 </h1>
-                                <h2 class="text-center">Radiomedical Science and Technology Co. Ltd </h2></div>
-                            <div class="col-md-12"><img src="{% static "main/image/index_image_00.jpg" %}" class="img-responsive"></div>
+                            <div class="col-md-12">
+                                {% load static %}
+                                <img src="{% static "main/image/index_image_name.jpg" %}" class="img-responsive center-block">
+                                <img src="{% static "main/image/index_image_00.jpg" %}" class="img-responsive">
+                            </div>
                         </div>
 
                         <hr>
