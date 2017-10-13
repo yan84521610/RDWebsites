@@ -36,15 +36,79 @@
             <div class="panel panel-default">
                 <div class="panel-body">
                     <h1 class="text-center">订购流程指南</h1>
-                    <ol class="lead">
-                        {% load static %}
-                        <li>下载河南省锐达引物订单表<a href="{% static "main/download_file/order_list.xls" %}" download="order_list">点击下载</a>；</li>
-                        <li>客户在引物订单表内填写订购信息；</li>
-                        <li>发送引物订单表到电子邮箱：<a href="mailto:sales@rdmarvin.com">sales@rdmarvin.com</a>；</li>
-                        <li>客服人员联系客户确认订购信息；</li>
-                        <li>引物配送；</li>
-                        <li>客服人员联系客户确认收货情况。</li>
-                    </ol>
+                    <div class="lead">
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-title">
+                                    <h3 class="text-center">第一步</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>下载河南省锐达《引物订单表》</p>
+                                    {% load static %}
+                                    <a href="{% static "main/download_file/order_list.xls" %}" download="order_list">点击下载</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default" style="background-color: #EFF5FB">
+                                <div class="panel-title">
+                                    <h3 class="text-center">第二步</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>客户在《引物订单表》内填写产品订购信息</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-title">
+                                    <h3 class="text-center">第三步</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>发送《引物订单表》到电子邮箱：</p>
+                                    <a href="mailto:sales@rdmarvin.com">sales@rdmarvin.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default" style="background-color: #EFF5FB">
+                                <div class="panel-title">
+                                    <h3 class="text-center">第四步</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>客服人员联系客户确认订购信息</p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-title">
+                                    <h3 class="text-center">第五步</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>合成引物配送</p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel panel-default" style="background-color: #EFF5FB">
+                                <div class="panel-title">
+                                    <h3 class="text-center">第六步</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>客服人员联系客户确认收货情况</p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
