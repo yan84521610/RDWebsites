@@ -25,7 +25,7 @@ SECRET_KEY = '!&=3zv(1ecf#k&l5yd_omy2$w8i+34zk84pz4ou)77+1i*2491'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '45.62.115.36', '118.89.229.48', 'www.radiomedical.cn',]
+ALLOWED_HOSTS = ['127.0.0.1', '45.62.115.36', '118.89.229.48', 'www.radiomedical.cn', 'radiomedical.cn']
 
 
 # Application definition
