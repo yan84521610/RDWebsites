@@ -1,0 +1,118 @@
+{% extends "main/base.html" %}
+
+{% load static %}
+
+{% block title %}
+    产品服务
+{% endblock title %}
+
+
+{% block main %}
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center" style="padding-top: 2%; padding-bottom: 2%; color: white">STAT3抑制剂</h1>
+
+            <div class="panel panel-primary">
+                <div class="panel-body">
+                    <div class="col-md-12">
+                        <br>
+                        <div class="col-md-4">
+                            <br>
+                            <br>
+                            <img src="{% static "main/image/stat3yizhiji_image_01.jpg" %}" class="img-responsive">
+                        </div>
+                        <div class="col-md-8">
+                            <br>
+                            <ul>
+                                <li><h4>产品名称：STAT3抑制剂</h4></li>
+                                <li><h4>产品编号：具体产品编号见产品列表</h4></li>
+                                <li><h4>产品价格：100mg 300-800元；250mg 500-1500元；500mg 800-2500元</h4></li>
+                                <li><h4>货期：1-15个工作日（具体详情来电咨询）</h4></li>
+                                <li><h4>运费：此系列商品免运费</h4></li>
+                                <li><h4>付款方式：对公转账；支付宝转账；微信转账</h4></li>
+                                <li><h4>销售热线：<a href="tel:17337867651">17337867651</a></h4></li>
+                                <li><h4>电子邮箱：<a href="mailto:sales@rdmarvin.com">sales@rdmarvin.com</a></h4></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <br>
+                        <br>
+
+                        <ul class="nav nav-tabs navbar-left" style="font-size: large">
+                            <li class="active"><a href="#guigecanshu" aria-controls="home" role="tab" data-toggle="tab"><p>规格参数</p></a></li>
+                            <li><a href="#jishuwendang" aria-controls="home" role="tab" data-toggle="tab"><p>技术文档</p></a></li>
+                            <li><a href="#shouhoufuwu" aria-controls="home" role="tab" data-toggle="tab"><p>售后服务</p></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12">
+                        <br>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="guigecanshu">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading" style="font-size: large">
+                                        基本信息
+                                    </div>
+                                    <div class="panel-body" style="font-size: 120%">
+                                        <p>中文名称：STAT3抑制剂</p>
+                                        <p>英文名称：STAT3 inhibitor</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="jishuwendang">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading" style="font-size: large">
+                                        技术文档
+                                    </div>
+                                    <div class="panel-body">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="shouhoufuwu">
+                                <div class="panel panel-primary">
+                                    <div class="panel-heading" style="font-size: large">
+                                        售后服务
+                                    </div>
+                                    <div class="panel-body" style="font-size: 120%">
+                                        <ol>
+                                            <li>客户在订购化学试剂时请仔细确认后再行订购，由客户选型失误而造成的退货需求，我方不承担任何责任。化学品大多性质较为特殊，存储方式复杂，请客户用户按照贮存条件说明妥善保存。</li>
+                                            <li>客户在收到货物后请立即检验产品包裹，若发现任何包装规格、数量、品种不符，外观毁损、短缺或缺陷，请将情况在3个工作日内反馈给我方，我方人员会及时处理上述问题，包括退货、换货等事宜。</li>
+                                            <li>产品有明确的有效期，在客户按照贮存条件说明妥善保存且保存期间货品未开封的前提下，在有效期之前，我方对产品质量给予一个月保证期。产品无明确的有效期，且用户按照贮存条件说明妥善保存且保存期间货品未开封的前提下，我方对产品质量给予一周的保证期。</li>
+                                            <li>对于货品质量与发送情况，如果用户未在上述规定期限内提出异议，则视为用户认可产品合格。</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="panel panel-success">
+                            <div class="panel-heading" style="font-size: large">
+                                产品列表
+                            </div>
+                            <div class="panel-body">
+                                <img src="{% static "main/image/stat3yizhiji_image_02.png" %}" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="panel-footer" style="font-size: large">
+                <p>
+                    销售热线：<a href="tel:17337867651">17337867651</a>
+                </p>
+                <p>
+                    电子邮箱：<a href="mailto:sales@rdmarvin.com">sales@rdmarvin.com</a>
+                </p>
+            </div>
+        </div>
+{% endblock main %}
