@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^products', views.products, name='products'),
     url(r'primer', views.primer, name='primer'),
     url(r'^stat3yizhiji', views.stat3yizhiji, name='stat3yizhiji'),
+    url(r'^chongzudanbai', views.chongzudanbai, name='chongzudanbai'),
     url(r'^hr', views.hr, name='hr'),
     url(r'^employment', views.employment, name='employment'),
     url(r'^(?P<year>\d{4})/(?P<month>\d{2})/(?P<day>\d{2})/(?P<employment>[-\w]+)/(?P<category>[-\w]+)/$',
