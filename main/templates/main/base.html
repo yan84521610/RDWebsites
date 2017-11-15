@@ -25,56 +25,63 @@
     </head>
 
     <!-- 模板页面主体内容 -->
-    <body>
+    <body style="background-color: #2E353D">
+        {% load static %}
+{#        <div style="background: url({% static "main/image/backgroud_image.jpg" %})">#}
+
         <!-- 页头 -->
-        <header>
-            <div class="container">
+        <header style="background-color: white">
+            <div class="container" >
                 <div class="row">
-                    <div class="col-md-12">
-                    </div>
+                        <img src="{% static "main/image/logo_and_title03.png" %}" class="img-responsive center-block" >
                 </div>
             </div>
         </header>
 
         <!-- 导航栏 -->
         <nav role="navigation">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="navbar navbar-default">
+{#            <ul class="nav nav-tabs" style="font-size: 150%" >#}
+{#                <li><a href={% url 'main:index' %}>主页</a></li>#}
+{#                <li><a href={% url 'main:about' %}>关于锐达</a></li>#}
+{#                <li><a href={% url 'main:news' %}>公司新闻</a></li>#}
+{#                <li><a href={% url 'main:products' %}>产品服务</a></li>#}
+{#                <li><a href={% url 'main:employment' %}>公司招聘</a></li>#}
+{#                <li><a href={% url 'main:contacts' %}>联系方式</a></li>#}
+{#            </ul>#}
+            <div class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <div class="navbar-brand">
+
+                        </div>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right" style="font-size: 150%">
+                        <li><a href={% url 'main:index' %}>主页</a></li>
+                        <li><a href={% url 'main:about' %}>关于锐达</a></li>
+                        <li><a href={% url 'main:news' %}>公司新闻</a></li>
+                        <li><a href={% url 'main:products' %}>产品服务</a></li>
+                        <li><a href={% url 'main:employment' %}>公司招聘</a></li>
+    {#                                <li><a href="/main/templates/main/cooperation.html">对外合作</a></li>#}
+                        <li><a href={% url 'main:contacts' %}>联系方式</a></li>
+                        <li>&nbsp&nbsp&nbsp</li>
+                    </ul>
+                </div>
 {#                            <div class="navbar-header">#}
 {#                                <div class="navbar-brand"><h3>锐达医药</h3></div>#}
 {#                            </div>#}
-                            <ul class="nav navbar-nav navbar-right" style="font-size: 150%">
-                                <li><a href={% url 'main:index' %}>主页</a></li>
-                                <li><a href={% url 'main:about' %}>关于锐达</a></li>
-                                <li><a href={% url 'main:news' %}>公司新闻</a></li>
-                                <li><a href={% url 'main:products' %}>产品服务</a></li>
-                                <li><a href={% url 'main:employment' %}>加入我们</a></li>
-{#                                <li><a href="/main/templates/main/cooperation.html">对外合作</a></li>#}
-                                <li><a href={% url 'main:contacts' %}>联系我们</a></li>
-                                <li>&nbsp&nbsp&nbsp</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </nav>
 
         <main>
-            {% load static %}
-            <div style="background: url({% static "main/image/backgroud_image.jpg" %})">
+
                 {% block main %}{% endblock main %}
                 <br>
             </div>
         </main>
 
         <footer>
-            <div class="container-fluid">
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default">
+            <div class="panel panel-default">
                             <div class="panel-body">
                             <div class="col-md-1 text-center">
                                 <a href={% url 'main:index' %}><h4>主页</h4></a>
@@ -90,15 +97,15 @@
                             </div>
                             <div class="col-md-1 text-center">
                                 <a href={% url 'main:products' %}><h4>产品服务</h4></a>
-                                <a href={% url "main:stat3yizhiji" %}>STAT3抑制剂</a>
+                                <a href={% url "main:stat3yizhiji" %}>STAT3抑制剂</a><br>
                                 <a href={% url "main:chongzudanbai" %}>重组蛋白</a><br>
                                 <a href={% url "main:primer" %}>引物合成</a>
                             </div>
                             <div class="col-md-1 text-center">
-                                <a href={% url 'main:employment' %}><h4>加入我们</h4></a>
+                                <a href={% url 'main:employment' %}><h4>公司招聘</h4></a>
                             </div>
                             <div class="col-md-1 text-center">
-                                <a href={% url 'main:contacts' %}><h4>联系我们</h4></a>
+                                <a href={% url 'main:contacts' %}><h4>联系方式</h4></a>
                             </div>
                             <div class="col-md-6 text-right">
                                 <h4>河南省锐达医药科技有限公司</h4>
@@ -107,6 +114,12 @@
                             </div>
                         </div>
                         </div>
+            <div class="container-fluid">
+                <br>
+                <div class="row">
+
+                    <div class="col-md-12">
+
                     </div>
                 </div>
                 <br>
