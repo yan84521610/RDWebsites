@@ -50,21 +50,17 @@
 {#            </ul>#}
             <div class="navbar navbar-default">
                 <div class="container-fluid">
-                    <div class="navbar-header">
-                        <div class="navbar-brand">
-
-                        </div>
+                    <div class="col-md-12">
+                        <ul class="nav navbar-nav navbar-right" style="font-size: 150%">
+                            <li><a href={% url 'main:index' %}>主页</a></li>
+                            <li><a href={% url 'main:about' %}>关于锐达</a></li>
+                            <li><a href={% url 'main:news' %}>公司新闻</a></li>
+                            <li><a href={% url 'main:products' %}>产品服务</a></li>
+                            <li><a href={% url 'main:employment' %}>公司招聘</a></li>
+                            <li><a href={% url 'main:contacts' %}>联系方式</a></li>
+                        </ul>
                     </div>
-                    <ul class="nav navbar-nav navbar-right" style="font-size: 150%">
-                        <li><a href={% url 'main:index' %}>主页</a></li>
-                        <li><a href={% url 'main:about' %}>关于锐达</a></li>
-                        <li><a href={% url 'main:news' %}>公司新闻</a></li>
-                        <li><a href={% url 'main:products' %}>产品服务</a></li>
-                        <li><a href={% url 'main:employment' %}>公司招聘</a></li>
-    {#                                <li><a href="/main/templates/main/cooperation.html">对外合作</a></li>#}
-                        <li><a href={% url 'main:contacts' %}>联系方式</a></li>
-                        <li>&nbsp&nbsp&nbsp</li>
-                    </ul>
+
                 </div>
 {#                            <div class="navbar-header">#}
 {#                                <div class="navbar-brand"><h3>锐达医药</h3></div>#}
