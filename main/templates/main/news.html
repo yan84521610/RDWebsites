@@ -1,3 +1,6 @@
+
+
+
 {% extends "main/base.html" %}
 
 
@@ -16,15 +19,8 @@
                 <div class="panel panel-default">
                     <div class="panel-body">
                         {% for news in news_list %}
-                            <h4>
-                                <a href="{{ news.get_absolute_url }}">
-                                    {{ news.title }}
-                                </a>
-                            </h4>
-                            <p>
-                                {{ news.author }} 发布于 {{ news.publish }}
-                            </p>
-                            {{ news.intro|linebreaks }}
+                            <p><a href="{{ news.get_absolute_url }}">{{ news.title }}</a><span style="float: right">{{ news.created|date:"Y年m月d日" }}</span></p>
+                            <hr>
                         {% endfor %}
                         {% include "main/pagination.html" with page=news_list %}
                     </div>
