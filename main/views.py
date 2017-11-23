@@ -61,10 +61,6 @@ def stat3yizhiji(request):
 def chongzudanbai(request):
     return render(request, 'main/chongzudanbai.html', )
 
-def hr(request):
-    object_list = News.published.filter(category='employment')
-    return render(request, 'main/hr.html', {'employment_list': object_list})
-
 def employment(request):
     object_list = Employment.published.filter(category='employment')
     paginator = Paginator(object_list, 10)  # 10 posts in each page

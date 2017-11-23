@@ -25,10 +25,11 @@
     </head>
 
     <!-- 模板页面主体内容 -->
-    <body style="background-color: #2E353D">
+    <body >
         {% load static %}
 {#        <div style="background: url({% static "main/image/backgroud_image.jpg" %})">#}
 
+        <div style="background-color: #CEE1F3">
         <!-- 页头 -->
         <header style="background-color: white">
             <div class="container" >
@@ -57,11 +58,13 @@
         </nav>
 
         <main>
-
-                {% block main %}{% endblock main %}
-                <br>
-            </div>
+            {% block main %}{% endblock main %}
+            <br>
+            <br>
+            <br>
         </main>
+
+        </div>
 
         <footer>
             <div class="panel panel-default">
