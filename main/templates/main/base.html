@@ -27,12 +27,11 @@
     <!-- 模板页面主体内容 -->
     <body >
         {% load static %}
-{#        <div style="background: url({% static "main/image/backgroud_image.jpg" %})">#}
 
-        <div style="background-color: #CEE1F3">
+
         <!-- 页头 -->
-        <header style="background-color: white">
-            <div class="container" >
+        <header>
+            <div class="container-fluid" >
                 <div class="row">
                         <img src="{% static "main/image/logo_and_title03.png" %}" class="img-responsive center-block" >
                 </div>
@@ -40,23 +39,23 @@
         </header>
 
         <!-- 导航栏 -->
-        <nav role="navigation" style="background-color: white">
+        <div style="background-color: #CEE1F3">
+        <nav role="navigation">
             <div class="navbar navbar-default">
                 <div class="container-fluid">
-                    <div class="col-md-12">
-                        <ul class="nav navbar-nav navbar-right" style="font-size: 150%">
-                            <li><a href={% url 'main:index' %}>主页</a></li>
-                            <li><a href={% url 'main:about' %}>关于锐达</a></li>
-                            <li><a href={% url 'main:news' %}>公司新闻</a></li>
-                            <li><a href={% url 'main:products' %}>产品服务</a></li>
-                            <li><a href={% url 'main:employment' %}>公司招聘</a></li>
-                            <li><a href={% url 'main:contacts' %}>联系方式</a></li>
-                        </ul>
-                    </div>
+                    <ul class="nav navbar-nav navbar-right" style="font-size: 150%">
+                        <li><a href={% url 'main:index' %}>主页</a></li>
+                        <li><a href={% url 'main:about' %}>关于锐达</a></li>
+                        <li><a href={% url 'main:news' %}>公司新闻</a></li>
+                        <li><a href={% url 'main:products' %}>产品服务</a></li>
+                        <li><a href={% url 'main:employment' %}>公司招聘</a></li>
+                        <li><a href={% url 'main:contacts' %}>联系方式</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
+        <!-- 主要页面内容 -->
         <main>
             {% block main %}{% endblock main %}
             <br>
@@ -66,49 +65,38 @@
 
         </div>
 
-        <footer>
-            <div class="panel panel-default">
-                            <div class="panel-body">
-                            <div class="col-md-1 text-center">
-                                <a href={% url 'main:index' %}><h4>主页</h4></a>
-                            </div>
-                            <div class="col-md-1 text-center">
-                                <a href={% url 'main:about' %}><h4>关于锐达</h4></a>
-                                <a href={% url "main:gongsijianjie" %}>公司简介</a> <br>
-                                <a href={% url "main:guanlituandui" %}>专家团队</a> <br>
-                                <a href={% url "main:gongsirongyu" %}>公司荣誉</a> <br>
-                            </div>
-                            <div class="col-md-1 text-center">
-                                <a href={% url 'main:news' %}><h4>公司新闻</h4></a>
-                            </div>
-                            <div class="col-md-1 text-center">
-                                <a href={% url 'main:products' %}><h4>产品服务</h4></a>
-                                <a href={% url "main:stat3yizhiji" %}>STAT3抑制剂</a><br>
-                                <a href={% url "main:chongzudanbai" %}>重组蛋白</a><br>
-                                <a href={% url "main:primer" %}>引物合成</a>
-                            </div>
-                            <div class="col-md-1 text-center">
-                                <a href={% url 'main:employment' %}><h4>公司招聘</h4></a>
-                            </div>
-                            <div class="col-md-1 text-center">
-                                <a href={% url 'main:contacts' %}><h4>联系方式</h4></a>
-                            </div>
-                            <div class="col-md-6 text-right">
-                                <h4>河南省锐达医药科技有限公司</h4>
-                                <p>Copyright © 2017 All Reserved 版权所有</p>
-                                <a href="http://www.miitbeian.gov.cn">豫ICP备17043144号</a>
-                            </div>
-                        </div>
-                        </div>
+        <!-- 页脚 -->
+        <footer style="margin-top: 30px; margin-bottom: 30px;">
             <div class="container-fluid">
-                <br>
-                <div class="row">
-
-                    <div class="col-md-12">
-
-                    </div>
+                <div class="col-md-1 text-center">
+                    <a href={% url 'main:index' %}><h4>主页</h4></a>
                 </div>
-                <br>
+                <div class="col-md-1 text-center">
+                    <a href={% url 'main:about' %}><h4>关于锐达</h4></a>
+                    <a href={% url "main:gongsijianjie" %}>公司简介</a> <br>
+                    <a href={% url "main:guanlituandui" %}>专家团队</a> <br>
+                    <a href={% url "main:gongsirongyu" %}>公司荣誉</a> <br>
+                </div>
+                <div class="col-md-1 text-center">
+                    <a href={% url 'main:news' %}><h4>公司新闻</h4></a>
+                </div>
+                <div class="col-md-1 text-center">
+                    <a href={% url 'main:products' %}><h4>产品服务</h4></a>
+                    <a href={% url "main:stat3yizhiji" %}>STAT3抑制剂</a><br>
+                    <a href={% url "main:chongzudanbai" %}>重组蛋白</a><br>
+                    <a href={% url "main:primer" %}>引物合成</a>
+                </div>
+                <div class="col-md-1 text-center">
+                    <a href={% url 'main:employment' %}><h4>公司招聘</h4></a>
+                </div>
+                <div class="col-md-1 text-center">
+                    <a href={% url 'main:contacts' %}><h4>联系方式</h4></a>
+                </div>
+                <div class="col-md-6 text-right">
+                    <h4>河南省锐达医药科技有限公司</h4>
+                    <p>Copyright © 2017 All Reserved 版权所有</p>
+                    <a href="http://www.miitbeian.gov.cn">豫ICP备17043144号</a>
+                </div>
             </div>
         </footer>
 
