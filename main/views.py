@@ -52,6 +52,9 @@ def gongsirongyu(request):
 def products(request):
     return render(request, 'main/products.html', )
 
+def research(request):
+    return render(request, 'main/research.html', )
+
 def primer(request):
     return render(request, 'main/primer.html', )
 
