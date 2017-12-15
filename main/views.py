@@ -49,6 +49,15 @@ def guanlituandui(request):
 def gongsirongyu(request):
     return render(request, 'main/gongsirongyu.html', )
 
+def fazhanlicheng(request):
+    return render(request, 'main/fazhanlicheng.html', )
+
+def zhanluehezuo(request):
+    return render(request, 'main/zhanluehezuo.html', )
+
+def zhanlueyuanjing(request):
+    return render(request, 'main/zhanluefazhan.html.html', )
+
 def products(request):
     return render(request, 'main/products.html', )
 
