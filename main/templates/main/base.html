@@ -58,6 +58,7 @@
                         <li><a href={% url 'main:index' %}>主页</a></li>
                         <li><a href={% url 'main:about' %}>关于锐达</a></li>
                         <li><a href={% url 'main:news' %}>公司新闻</a></li>
+                        <li><a href={% url 'main:research' %}>研发中心</a></li>
                         <li><a href={% url 'main:products' %}>产品服务</a></li>
                         <li><a href={% url 'main:employment' %}>公司招聘</a></li>
                         <li><a href={% url 'main:contacts' %}>联系方式</a></li>
@@ -84,12 +85,18 @@
                 </div>
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:about' %}><h4>关于锐达</h4></a>
+                    <a href={% url "main:fazhanlicheng" %}>发展历程</a> <br>
                     <a href={% url "main:gongsijianjie" %}>公司简介</a> <br>
-                    <a href={% url "main:guanlituandui" %}>专家团队</a> <br>
                     <a href={% url "main:gongsirongyu" %}>公司荣誉</a> <br>
+                    <a href={% url "main:guanlituandui" %}>专家团队</a> <br>
+                    <a href={% url "main:zhanluehezuo" %}>战略合作</a> <br>
+                    <a href={% url "main:zhanlueyuanjing" %}>战略愿景</a> <br>
                 </div>
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:news' %}><h4>公司新闻</h4></a>
+                </div>
+                <div class="col-md-1 text-center">
+                    <a href={% url 'main:research' %}><h4>研发中心</h4></a>
                 </div>
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:products' %}><h4>产品服务</h4></a>
@@ -103,7 +110,7 @@
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:contacts' %}><h4>联系方式</h4></a>
                 </div>
-                <div class="col-md-6 text-right">
+                <div class="col-md-5 text-right">
                     <h4>河南省锐达医药科技有限公司</h4>
                     <p>Copyright © 2017 All Reserved 版权所有</p>
                     <a href="http://www.miitbeian.gov.cn">豫ICP备17043144号</a>

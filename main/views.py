@@ -56,10 +56,58 @@ def zhanluehezuo(request):
     return render(request, 'main/zhanluehezuo.html', )
 
 def zhanlueyuanjing(request):
-    return render(request, 'main/zhanluefazhan.html.html', )
+    return render(request, 'main/zhanlueyuanjing.html', )
 
 def products(request):
     return render(request, 'main/products.html', )
+
+def xiaofenzibaxianghuahewu(request):
+    return render(request, 'main/xiaofenzibaxianghuahewu.html', )
+
+def stat3(request):
+    return render(request, 'main/stat3.html', )
+
+def tianranchanwujixinmoxing(request):
+    return render(request, 'main/tianranchanwujixinmoxing.html', )
+
+def jianghuangsu(request):
+    return render(request, 'main/jianghuangsu.html', )
+
+def shengwuzhiji(request):
+    return render(request, 'main/shengwuzhiji.html', )
+
+def xibaoyinzi(request):
+    return render(request, 'main/xibaoyinzi.html', )
+
+def fenzishengwuxuechanpin(request):
+    return render(request, 'main/fenzishengwuxuechanpin.html', )
+
+def PCRshiji(request):
+    return render(request, 'main/PCRshiji.html', )
+
+def fenzikelongyuDNAMarker(request):
+    return render(request, 'main/fenzikelongyuDNAMarker.html', )
+
+def ganshoutaixibao(request):
+    return render(request, 'main/ganshoutaixibao.html', )
+
+def jiyinjiance(request):
+    return render(request, 'main/jiyinjiance.html', )
+
+def jishufuwu(request):
+    return render(request, 'main/jishufuwu.html', )
+
+def yinwuhecheng(request):
+    return render(request, 'main/yinwuhecheng.html', )
+
+def DNAcexu(request):
+    return render(request, 'main/DNAcexu.html', )
+
+def FDExome(request):
+    return render(request, 'main/FDExome.html', )
+
+def FD180(request):
+    return render(request, 'main/FD180.html', )
 
 def research(request):
     return render(request, 'main/research.html', )

@@ -4,3 +4,11 @@ body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans SC Sliced', sans-serif;
     /*font-weight: 600;*/
 }
+
+.left{
+text-shadow:none;
+}
+
+.carousel-control.right, .carousel-control.left{
+background-image: none;
+}

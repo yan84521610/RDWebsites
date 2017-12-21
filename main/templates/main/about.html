@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1 class="text-center" style="padding-top: 2%; padding-bottom: 2%;">关于锐达 / Overview</h1>
+                    <h1 class="text-center" style="padding-top: 2%; padding-bottom: 2%;">关于锐达 / About Us</h1>
                 </div>
             </div>
         </div>
@@ -23,64 +23,46 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="col-md-4" >
-                        <div class="panel panel-default" style="background-color: #BCD0C5;">
-                            <div class="panel-body">
-                                <h1 class="text-center">公司简介</h1>
-                                <a class="btn btn-default center-block" href={% url "main:gongsijianjie" %} role="button">点击进入</a>
-                                <h3><br></h3>
-                            </div>
-                        </div>
+                    <div class="col-md-4" >                     
+                        <a href={% url "main:gongsijianjie" %}>
+                            <img src="{% static "main/image/about_image_gongsijianjie.jpg" %}" class="img-responsive">
+                        </a>                              
                     </div>
 
                     <div class="col-md-4" >
-                        <div class="panel panel-default" style="background-color: #BCD0C5;">
-                            <div class="panel-body">
-                                <h1 class="text-center">发展历程</h1>
-                                <a class="btn btn-default center-block" href={% url "main:fazhanlicheng" %} role="button">点击进入</a>
-                                <h3><br></h3>
-                            </div>
-                        </div>
+                        <a href={% url "main:fazhanlicheng" %}>
+                            <img src="{% static "main/image/about_image_fazhanlicheng.jpg" %}" class="img-responsive">
+                        </a>
                     </div>
 
                     <div class="col-md-4" >
-                        <div class="panel panel-default" style="background-color: #BCD0C5;">
-                            <div class="panel-body">
-                                <h1 class="text-center">公司荣誉</h1>
-                                <a class="btn btn-default center-block" href={% url "main:gongsirongyu" %} role="button">点击进入</a>
-                                <h3><br></h3>
-                            </div>
-                        </div>
+
+                                <a href={% url "main:gongsirongyu" %}>
+                                    <img src="{% static "main/image/about_image_gongsirongyu.jpg" %}" class="img-responsive">
+                                </a>
+
+                    </div>
+
+                    <div class="col-md-12"><br></div>
+
+                    <div class="col-md-4" >
+
+                                <a href={% url "main:guanlituandui" %}>
+                                    <img src="{% static "main/image/about_image_zhuanjiatuandui.jpg" %}" class="img-responsive">
+                                </a>
+
                     </div>
 
                     <div class="col-md-4" >
-                        <div class="panel panel-default" style="background-color: #BCD0C5;">
-                            <div class="panel-body">
-                                <h1 class="text-center">专家团队</h1>
-                                <a class="btn btn-default center-block" href={% url "main:guanlituandui" %} role="button">点击进入</a>
-                                <h3><br></h3>
-                            </div>
-                        </div>
+                        <a href={% url "main:zhanluehezuo" %}>
+                            <img src="{% static "main/image/about_image_zhanluehezuo.jpg" %}" class="img-responsive">
+                        </a>
                     </div>
 
                     <div class="col-md-4" >
-                        <div class="panel panel-default" style="background-color: #BCD0C5;">
-                            <div class="panel-body">
-                                <h1 class="text-center">战略合作</h1>
-                                <a class="btn btn-default center-block" href={% url "main:zhanluehezuo" %} role="button">点击进入</a>
-                                <h3><br></h3>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4" >
-                        <div class="panel panel-default" style="background-color: #BCD0C5;">
-                            <div class="panel-body">
-                                <h1 class="text-center">战略愿景</h1>
-                                <a class="btn btn-default center-block" href={% url "main:zhanlueyuanjing" %} role="button">点击进入</a>
-                                <h3><br></h3>
-                            </div>
-                        </div>
+                        <a href={% url "main:zhanlueyuanjing" %}>
+                            <img src="{% static "main/image/about_image_zhanlueyuanjing.jpg" %}" class="img-responsive">
+                        </a>
                     </div>
                 </div>
             </div>

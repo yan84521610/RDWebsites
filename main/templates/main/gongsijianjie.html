@@ -1,5 +1,6 @@
 {% extends "main/base.html" %}
 
+{% load static %}
 
 {% block title %}
     公司简介
@@ -9,70 +10,134 @@
 {% block main %}
     <div class="container">
         <div class="row">
-            <h1 class="text-center" style="padding-top: 2%; padding-bottom: 2%; color: white">关于锐达 / Overview</h1>
+            <h3 class="text-center" style="padding-top: 2%; padding-bottom: 2%;">公司简介</h3>
 
-            <ul class="nav nav-tabs nav-justified">
-                <li class="active"><a href="#gongsijianjie" aria-controls="home" role="tab" data-toggle="tab"><h3>公司简介</h3></a></li>
-                <li><a href="#fazhanlicheng" aria-controls="home" role="tab" data-toggle="tab"><h3>发展历程</h3></a></li>
-                <li><a href="#zhanlueyuanjing" aria-controls="home" role="tab" data-toggle="tab"><h3>战略愿景</h3></a></li>
-            </ul>
-
-            <div class="tab-content">
-                <div class="tab-pane active" id="gongsijianjie">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="page-header"><h1 class="text-center">公司简介</h1></div>
-                        <h3>河南省锐达医药科技有限公司始建于2014年11月，坐落于河南省开封市汴西湖畔，地处河南省自贸区，为开封市政府重点扶持企业。</h3>
-                        <h3>公司从事以肿瘤精准医学为核心的医药研发和技术转化，具体业务包括抗癌靶向药物、肿瘤个体化药物设计、医学诊断产品和分子生物学试剂及相关技术服务等。</h3>
-                        <h3><br></h3>
+            <div>
+                <div>
+                    <div class="col-md-12">
+                        <p style="text-indent: 2em;">锐达医药是一家由郑州大学特聘教授、黄河学者、美籍华人徐学军博士创立、以海外资深科学家任技术领头人的生物医药高科技企业。公司以自主知识产权创新药物研究、开发、转化为核心，拥有国内外专利十多项，聚焦于恶性肿瘤的诊治，具体业务包括抗癌靶向药物、肿瘤个体化药物设计、医学诊断产品及相关技术服务等。</p>
+                        <p style="text-indent: 2em;">公司注册于国家级企业孵化器开封高新技术创业服务中心（开封众创空间），是开封市政府重点扶持企业之一，于2015年初获得开封新区政府高科技双创企业启动经费。</p>
+                        <p style="text-indent: 2em;">2015年10月，公司获得河南省中原科创基金战略投资，成为中原科创基金投资的河南省第一批、开封市第一家科创企业。该基金成立于2015年9月30日，由河南省财政厅、河南省科技厅与中原证券发起设立，是河南省成立的首只政府背景的天使投资基金。</p>
                     </div>
                     <div class="col-md-10 col-md-offset-1">
-                        <div class="col-md-4">
-                            {% load static %}
-                            <img src="{% static "main/image/gongsijianjie_image_01.JPG" %}" class="img-responsive">
-                        </div>
-                        <div class="col-md-4">
-                            {% load static %}
-                            <img src="{% static "main/image/gongsijianjie_image_02.JPG" %}" class="img-responsive">
-                        </div>
-                        <div class="col-md-4">
-                            {% load static %}
-                            <img src="{% static "main/image/gongsijianjie_image_03.JPG" %}" class="img-responsive">
-                        </div>
-                        <div class="col-md-12">
-                            <br>
-                            <h3 class="text-center">开封市城乡一体化示范区政府重点扶持企业</h3>
-                            <h3 class="text-center">河南省第一批、开封市第一家获得中原科创基金投资的科创企业</h3>
-                        </div>
+
+                        <table border="2" width="900     ">
+                            <p class="text-center">河南省首批被投资的企业名单</p>
+                            <tbody class="">
+                                <tr>
+                                    <th>企业名称</th>
+                                    <th>投资方式</th>
+                                    <th>投资范围</th>
+                                    <th>所属城市</th>
+                                </tr>
+                                <tr>
+                                    <td>大河智信</td>
+                                    <td>股权</td>
+                                    <td>国家大学科技园</td>
+                                    <td>郑州</td>
+                                </tr>
+                                <tr style="font-weight: bold;">
+                                    <td style="">锐达医药</td>
+                                    <td>股权</td>
+                                    <td>国家级孵化器、千人计划</td>
+                                    <td>开封</td>
+                                </tr>
+                                <tr>
+                                    <td>埃文科技</td>
+                                    <td>股权</td>
+                                    <td>国家级孵化器</td>
+                                    <td>郑州</td>
+                                </tr>
+                                <tr>
+                                    <td>宜家安好</td>
+                                    <td>股权</td>
+                                    <td>省级孵化器</td>
+                                    <td>郑州</td>
+                                </tr>
+                                <tr>
+                                    <td>遇见网络</td>
+                                    <td>股权</td>
+                                    <td>国家大学科技园</td>
+                                    <td>郑州</td>
+                                </tr>
+                                <tr>
+                                    <td>特拍科技</td>
+                                    <td>股权</td>
+                                    <td>国家级众创空间</td>
+                                    <td>郑州</td>
+                                </tr>
+                              </tbody>
+                        </table>
                     </div>
-                </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="fazhanlicheng">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <div class="col-md-12">
-                                <div class="page-header"><h1 class="text-center">发展历程</h1></div>
-                                <div>
-                                    {% load static %}
-                                    <img src="{% static "main/image/gongsijianjie_image_fazhanlicheng.jpg" %}" class="img-responsive center-block">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="zhanlueyuanjing">
-                    <div class="panel panel-default">
-                <div class="panel-body">
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="page-header"><h1 class="text-center">战略愿景</h1></div>
-                        <h3>公司立志于人类健康事业，努力构建科学高效的医药产业链，致力于打造为集精准医疗技术研发及转化、医疗服务、医学教育于一体的综合性生物医药实体。</h3>
+                    <div class="col-md-12">
+                        <br>
+                        <p style="text-indent: 2em;">公司立足开封、着眼全国以及全球医药技术的发展，与国内外多家高校、医药企业和学术机构建立了广泛的合作，特别是美国Baylor College of Medicine、MD Anderson Cancer Center、郑州大学、河南大学等有着密切的科研合作和业务交流。公司立志于人类健康事业，并积极配合“一带一路”国家战略和地区产业布局，努力构建科学高效的医药产业链，致力于打造癌症预防、医疗和康复为一体的高端医疗服务系统。</p>
                     </div>
                 </div>
             </div>
-                </div>
-            </div>
+{##}
+{#            <ul class="nav nav-tabs nav-justified">#}
+{#                <li class="active"><a href="#gongsijianjie" aria-controls="home" role="tab" data-toggle="tab"><h3>公司简介</h3></a></li>#}
+{#                <li><a href="#fazhanlicheng" aria-controls="home" role="tab" data-toggle="tab"><h3>发展历程</h3></a></li>#}
+{#                <li><a href="#zhanlueyuanjing" aria-controls="home" role="tab" data-toggle="tab"><h3>战略愿景</h3></a></li>#}
+{#            </ul>#}
+{##}
+{#            <div class="tab-content">#}
+{#                <div class="tab-pane active" id="gongsijianjie">#}
+{#                    <div class="panel panel-default">#}
+{#                        <div class="panel-body">#}
+{#                    <div class="col-md-8 col-md-offset-2">#}
+{#                        <div class="page-header"><h1 class="text-center">公司简介</h1></div>#}
+{#                        <h3>锐达医药是一家由郑州大学特聘教授、黄河学者、美籍华人徐学军博士创立、以海外资深科学家任技术领头人的生物医药高科技企业。公司以自主知识产权创新药物研究、开发、转化为核心，拥有国内外专利十多项，聚焦于恶性肿瘤的诊治，具体业务包括抗癌靶向药物、肿瘤个体化药物设计、医学诊断产品及相关技术服务等。</h3>#}
+{#                        <h3>公司注册于国家级企业孵化器开封高新技术创业服务中心（开封众创空间），是开封市政府重点扶持企业之一，于2015年初获得开封新区政府高科技双创企业启动经费。</h3>#}
+{#                        <h3>2015年10月，公司获得河南省中原科创基金战略投资，成为中原科创基金投资的河南省第一批、开封市第一家科创企业。该基金成立于2015年9月30日，由河南省财政厅、河南省科技厅与中原证券发起设立，是河南省成立的首只政府背景的天使投资基金。</h3>#}
+{#                    </div>#}
+{#                    <div class="col-md-10 col-md-offset-1">#}
+{#                        <div class="col-md-4">#}
+{#                            {% load static %}#}
+{#                            <img src="{% static "main/image/gongsijianjie_image_01.JPG" %}" class="img-responsive">#}
+{#                        </div>#}
+{#                        <div class="col-md-4">#}
+{#                            {% load static %}#}
+{#                            <img src="{% static "main/image/gongsijianjie_image_02.JPG" %}" class="img-responsive">#}
+{#                        </div>#}
+{#                        <div class="col-md-4">#}
+{#                            {% load static %}#}
+{#                            <img src="{% static "main/image/gongsijianjie_image_03.JPG" %}" class="img-responsive">#}
+{#                        </div>#}
+{#                        <div class="col-md-12">#}
+{#                            <br>#}
+{#                            <h3 class="text-center">开封市城乡一体化示范区政府重点扶持企业</h3>#}
+{#                            <h3 class="text-center">河南省第一批、开封市第一家获得中原科创基金投资的科创企业</h3>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="tab-pane" id="fazhanlicheng">#}
+{#                    <div class="panel panel-default">#}
+{#                        <div class="panel-body">#}
+{#                            <div class="col-md-12">#}
+{#                                <div class="page-header"><h1 class="text-center">发展历程</h1></div>#}
+{#                                <div>#}
+{#                                    {% load static %}#}
+{#                                    <img src="{% static "main/image/gongsijianjie_image_fazhanlicheng.jpg" %}" class="img-responsive center-block">#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#                <div class="tab-pane" id="zhanlueyuanjing">#}
+{#                    <div class="panel panel-default">#}
+{#                <div class="panel-body">#}
+{#                    <div class="col-md-8 col-md-offset-2">#}
+{#                        <div class="page-header"><h1 class="text-center">战略愿景</h1></div>#}
+{#                        <h3>公司立志于人类健康事业，努力构建科学高效的医药产业链，致力于打造为集精准医疗技术研发及转化、医疗服务、医学教育于一体的综合性生物医药实体。</h3>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#                </div>#}
+{#            </div>#}
         </div>
     </div>
 
