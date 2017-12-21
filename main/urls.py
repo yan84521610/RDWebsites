@@ -20,6 +20,7 @@ urlpatterns = [
     url(r'^products', views.products, name='products'),
     url(r'xiaofenzibaxianghuahewu', views.xiaofenzibaxianghuahewu, name='xiaofenzibaxianghuahewu'),
     url(r'stat3', views.stat3, name='stat3'),
+    url(r'parpyizhiji', views.parpyizhiji, name='parpyizhiji'),
     url(r'tianranchanwujixinmoxing', views.tianranchanwujixinmoxing, name='tianranchanwujixinmoxing'),
     url(r'jianghuangsu', views.jianghuangsu, name='jianghuangsu'),
     url(r'shengwuzhiji', views.shengwuzhiji, name='shengwuzhiji'),

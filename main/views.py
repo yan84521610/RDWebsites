@@ -67,6 +67,9 @@ def xiaofenzibaxianghuahewu(request):
 def stat3(request):
     return render(request, 'main/stat3.html', )
 
+def parpyizhiji(request):
+    return render(request, 'main/parpyizhiji.html', )
+
 def tianranchanwujixinmoxing(request):
     return render(request, 'main/tianranchanwujixinmoxing.html', )
 

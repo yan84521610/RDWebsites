@@ -50,7 +50,7 @@
         </header>
 
         <!-- 导航栏 -->
-        <div style="background-color: #CEE1F3">
+        <div >
         <nav role="navigation">
             <div class="navbar navbar-default">
                 <div class="container-fluid">
@@ -78,19 +78,19 @@
         </div>
 
         <!-- 页脚 -->
-        <footer style="margin-top: 30px; margin-bottom: 30px;">
+        <footer style="margin-top: 30px; margin-bottom: 30px; background-color: #CEE1F3">
             <div class="container-fluid">
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:index' %}><h4>主页</h4></a>
                 </div>
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:about' %}><h4>关于锐达</h4></a>
-                    <a href={% url "main:fazhanlicheng" %}>发展历程</a> <br>
-                    <a href={% url "main:gongsijianjie" %}>公司简介</a> <br>
-                    <a href={% url "main:gongsirongyu" %}>公司荣誉</a> <br>
-                    <a href={% url "main:guanlituandui" %}>专家团队</a> <br>
-                    <a href={% url "main:zhanluehezuo" %}>战略合作</a> <br>
-                    <a href={% url "main:zhanlueyuanjing" %}>战略愿景</a> <br>
+                    <a href={% url "main:fazhanlicheng" %}><p style="font-size: 85%">发展历程</p></a>
+                    <a href={% url "main:gongsijianjie" %}><p style="font-size: 85%">公司简介</p></a>
+                    <a href={% url "main:gongsirongyu" %}><p style="font-size: 85%">公司荣誉</p></a>
+                    <a href={% url "main:guanlituandui" %}><p style="font-size: 85%">专家团队</p></a>
+                    <a href={% url "main:zhanluehezuo" %}><p style="font-size: 85%">战略合作</p></a>
+                    <a href={% url "main:zhanlueyuanjing" %}><p style="font-size: 85%">战略愿景</p></a>
                 </div>
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:news' %}><h4>公司新闻</h4></a>
@@ -100,9 +100,12 @@
                 </div>
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:products' %}><h4>产品服务</h4></a>
-                    <a href={% url "main:stat3yizhiji" %}>STAT3抑制剂</a><br>
-                    <a href={% url "main:chongzudanbai" %}>重组蛋白</a><br>
-                    <a href={% url "main:primer" %}>引物合成</a>
+                    <a href={% url "main:stat3yizhiji" %}><p style="font-size: 85%">小分子靶向化合物</p></a>
+                    <a href={% url "main:chongzudanbai" %}><p style="font-size: 85%">天然产物及新剂型</p></a>
+                    <a href={% url "main:primer" %}><p style="font-size: 85%">生物制剂</p></a>
+                    <a href={% url "main:primer" %}><p style="font-size: 85%">分子生物学产品</p></a>
+                    <a href={% url "main:primer" %}><p style="font-size: 85%">基因检测</p></a>
+                    <a href={% url "main:primer" %}><p style="font-size: 85%">技术服务</p></a>
                 </div>
                 <div class="col-md-1 text-center">
                     <a href={% url 'main:employment' %}><h4>公司招聘</h4></a>
