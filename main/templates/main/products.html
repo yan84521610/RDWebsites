@@ -110,61 +110,83 @@
                 {% endblock %}
 
 {#                垂直导航栏#}
-                <div class="col-md-3">
-                    <a href="{% url "main:xiaofenzibaxianghuahewu" %}" style="font-size: 130%; color: black">小分子靶向化合物</a>
-                    <ul>
-                        <li><a href="{% url "main:stat3" %}" style="font-size: 120%; color: black">STAT3抑制剂</a></li>
-                        <li><a href="{% url "main:parpyizhiji" %}" style="font-size: 120%; color: black">PARP抑制剂</a></li>
+                <div class="col-md-2">
+                    <!--<a href="{% url "main:xiaofenzibaxianghuahewu" %}" style="font-size: 140%; color: black">小分子靶向化合物</a>-->
+                    <p style="font-size: 140%; color: black">小分子靶向化合物</p>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="{% url "main:stat3" %}" style="font-size: 110%; color: ">STAT3抑制剂</a></li>
+                        <li class="active"><a href="{% url "main:parpyizhiji" %}" style="font-size: 110%; color: ">PARP抑制剂</a></li>
                     </ul>
-                    <a href="{% url "main:tianranchanwujixinmoxing" %}" style="font-size: 130%; color: black">天然产物及新剂型</a>
-                    <ul>
-                        <li><a href="{% url "main:jianghuangsu" %}" style="font-size: 120%; color: black">姜黄素</a></li>
+                    <!--<a href="{% url "main:tianranchanwujixinmoxing" %}" style="font-size: 140%; color: black">天然产物及新剂型</a>-->
+                    <p style="font-size: 140%; color: black">天然产物及新剂型</p>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="{% url "main:jianghuangsu" %}" style="font-size: 110%; color: ">姜黄素</a></li>
                     </ul>
-                    <a href="{% url "main:shengwuzhiji" %}" style="font-size: 130%; color: black">生物制剂</a>
-                    <ul>
-                        <li><a href="{% url "main:xibaoyinzi" %}" style="font-size: 120%; color: black">细胞因子</a></li>
+                    <!--<a href="{% url "main:shengwuzhiji" %}" style="font-size: 140%; color: black">生物制剂</a>-->
+                    <p style="font-size: 140%; color: black">生物制剂</p>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="{% url "main:xibaoyinzi" %}" style="font-size: 110%; color: ">细胞因子</a></li>
                     </ul>
-                    <a href="{% url "main:fenzishengwuxuechanpin" %}" style="font-size: 130%; color: black">分子生物学产品</a>
-                    <ul>
-                        <li><a href="{% url "main:PCRshiji" %}" style="font-size: 120%; color: black">PCR试剂</a></li>
-                        <li><a href="{% url "main:fenzikelongyuDNAMarker" %}" style="font-size: 120%; color: black">分子克隆与DNA Marker</a></li>
-                        <li><a href="{% url "main:ganshoutaixibao" %}" style="font-size: 120%; color: black">感受态细胞</a></li>
+                    <!--<a href="{% url "main:fenzishengwuxuechanpin" %}" style="font-size: 140%; color: black">分子生物学产品</a>-->
+                    <p style="font-size: 140%; color: black">分子生物学产品</p>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="{% url "main:PCRshiji" %}" style="font-size: 110%; color: ">PCR试剂</a></li>
+                        <li class="active"><a href="{% url "main:fenzikelongyuDNAMarker" %}" style="font-size: 110%; color: ">分子克隆与DNA Marker</a></li>
+                        <li class="active"><a href="{% url "main:ganshoutaixibao" %}" style="font-size: 110%; color: ">感受态细胞</a></li>
                     </ul>
-                    <a href="{% url "main:jiyinjiance" %}" style="font-size: 130%; color: black">基因检测</a>
-                    <ul>
-                        <li><a href="{% url "main:FDExome" %}" style="font-size: 120%; color: black">全基因检测</a></li>
-                        <li><a href="{% url "main:FD180" %}" style="font-size: 120%; color: black">无创癌症基因检测</a></li>
+                    <!--<a href="{% url "main:jiyinjiance" %}" style="font-size: 140%; color: black">基因检测</a>-->
+                    <p style="font-size: 140%; color: black">基因检测</p>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="{% url "main:FDExome" %}" style="font-size: 110%; color: ">全基因检测</a></li>
+                        <li class="active"><a href="{% url "main:FD180" %}" style="font-size: 110%; color: ">无创癌症基因检测</a></li>
                     </ul>
-                    <a href="{% url "main:jishufuwu" %}" style="font-size: 120%; color: black">技术服务</a>
-                    <ul>
-                        <li><a href="{% url "main:yinwuhecheng" %}" style="font-size: 120%; color: black">引物合成</a></li>
-                        <li><a href="{% url "main:DNAcexu" %}" style="font-size: 120%; color: black">DNA测序</a></li>
+                    <!--<a href="{% url "main:jishufuwu" %}" style="font-size: 140%; color: black">技术服务</a>-->
+                    <p style="font-size: 140%; color: black">技术服务</p>
+                    <ul class="nav nav-pills nav-stacked">
+                        <li class="active"><a href="{% url "main:yinwuhecheng" %}" style="font-size: 110%; color: ">引物合成</a></li>
+                        <li class="active"><a href="{% url "main:DNAcexu" %}" style="font-size: 110%; color: ">DNA测序</a></li>
                     </ul>
                 </div>
 
 {#                中心内容#}
                 {% block product %}
-                    <div class="col-md-9">
-                        <div class="col-md-6">
-                            <img src="{% static "main/image/image.png" %}" class="img-responsive">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="{% static "main/image/image.png" %}" class="img-responsive">
-                        </div>
-                        <div class="col-md-12"><br></div>
-                        <div class="col-md-6">
-                            <img src="{% static "main/image/image.png" %}" class="img-responsive">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="{% static "main/image/image.png" %}" class="img-responsive">
-                        </div>
-                        <div class="col-md-12"><br></div>
-                        <div class="col-md-6">
-                            <img src="{% static "main/image/image.png" %}" class="img-responsive">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="{% static "main/image/image.png" %}" class="img-responsive">
-                        </div>
+                    <div class="col-md-10 ">
+                        <p class="text-center"style="font-size: 140%; color: black">产品服务基本介绍</p>
+                        <p style="text-indent: 2em; font-size: 130%">河南省锐达医药科技有限公司........</p>
+                        <!--<div class="col-md-12"><br></div>-->
+                        <!--<div class="col-md-12"><br></div>-->
+                        <!--<div class="col-md-12"><br></div>-->
+                        <!--<div class="col-md-12"><br></div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<a href={% url "main:xiaofenzibaxianghuahewu" %}>-->
+                            <!--<img src="{% static "main/image/product_01.png" %}" class="img-responsive">-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<a href={% url "main:tianranchanwujixinmoxing" %}>-->
+                            <!--<img src="{% static "main/image/product_02.png" %}" class="img-responsive">-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<a href={% url "main:shengwuzhiji" %}>-->
+                            <!--<img src="{% static "main/image/product_03.png" %}" class="img-responsive">-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-12"><br></div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<a href={% url "main:fenzishengwuxuechanpin" %}>-->
+                            <!--<img src="{% static "main/image/product_04.png" %}" class="img-responsive">-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4"><a href={% url "main:jiyinjiance" %}>-->
+                            <!--<img src="{% static "main/image/product_05.png" %}" class="img-responsive">-->
+                            <!--</a>-->
+                        <!--</div>-->
+                        <!--<div class="col-md-4">-->
+                            <!--<a href={% url "main:jishufuwu" %}>-->
+                            <!--<img src="{% static "main/image/product_06.png" %}" class="img-responsive">-->
+                            <!--</a>-->
+                        <!--</div>-->
                     </div>
                 {% endblock %}
             </div>
