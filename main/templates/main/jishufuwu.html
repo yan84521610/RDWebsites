@@ -10,8 +10,27 @@
     <h3 class="text-center">技术服务</h3>
 {% endblock %}
 
+{% block navbar %}
+    <div class="col-md-2">
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" ><a href="{% url "main:xiaofenzibaxianghuahewu" %}" style="font-size: 110%; color: ">小分子靶向化合物</a></li>
+            <li role="presentation" ><a href="{% url "main:tianranchanwujixinmoxing" %}" style="font-size: 110%; color: ">天然产物及新剂型</a></li>
+            <li role="presentation" ><a href="{% url "main:shengwuzhiji" %}" style="font-size: 110%; color: ">生物制剂</a></li>
+            <li role="presentation" ><a href="{% url "main:fenzishengwuxuechanpin" %}" style="font-size: 110%; color: ">分子生物学产品</a></li>
+            <li role="presentation" ><a href="{% url "main:jiyinjiance" %}" style="font-size: 110%; color: ">基因检测</a></li>
+            <li role="presentation" class="active"><a href="{% url "main:jishufuwu" %}" style="font-size: 110%; color: ">技术服务</a></li>
+        </ul>
+    </div>
+{% endblock %}
+
 {% block product %}
-    <div class="col-md-9">
+    <div class="col-md-10">
+        <div class="col-md-12" >
+
+        <a href={% url "main:yinwuhecheng" %}>
+            <img src="{% static "main/image/fenzishengwuxuefuwu1.png" %}" class="img-responsive">
+        </a>
+    </div>
 
     </div>
 {% endblock %}
