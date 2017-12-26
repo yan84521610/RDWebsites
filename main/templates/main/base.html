@@ -54,7 +54,8 @@
         <nav role="navigation">
             <div class="navbar navbar-default">
                 <div class="container-fluid">
-                    <ul class="nav navbar-nav navbar-right" style="font-size: 150%">
+                    <div class="col-md-12 col-md-offset-3 ">
+                    <ul class="nav navbar-nav navbar-Centered" style="font-size: 150%"class="text-center">
                         <li><a href={% url 'main:index' %}>主页</a></li>
                         <li><a href={% url 'main:about' %}>关于锐达</a></li>
                         <li><a href={% url 'main:news' %}>公司新闻</a></li>
@@ -62,6 +63,7 @@
                         <li><a href={% url 'main:products' %}>产品服务</a></li>
                         <li><a href={% url 'main:employment' %}>公司招聘</a></li>
                         <li><a href={% url 'main:contacts' %}>联系方式</a></li>
+                        </div>
                     </ul>
                 </div>
             </div>
