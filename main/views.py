@@ -109,6 +109,15 @@ def DNAcexu(request):
 def FDExome(request):
     return render(request, 'main/FDExome.html', )
 
+def RD(request):
+    return render(request, 'main/RD.html', )
+
+def lianjiemei(request):
+    return render(request, 'main/lianjiemei.html', )
+
+def fanzhuanlumei(request):
+    return render(request, 'main/fanzhuanlumei.html', )
+
 def FD180(request):
     return render(request, 'main/FD180.html', )
 
